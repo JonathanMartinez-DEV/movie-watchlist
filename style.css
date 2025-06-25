@@ -10,6 +10,12 @@ body {
     Typography
 ================ */
 
+h1,
+h2,
+a {
+  color: #ffffff;
+}
+
 h1 {
   font-weight: 800;
   font-size: clamp(1.75rem, 7.78vw, 3rem);
@@ -28,11 +34,31 @@ p {
 a {
   font-size: clamp(0.75rem, 2.545vw, 1rem);
   font-weight: 700;
+  text-decoration: none;
 }
 
 /* ============
     Layout
 ============ */
+
+header,
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* === Header Layout === */
+header {
+  min-height: 208px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* ================
     Components
