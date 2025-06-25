@@ -41,12 +41,6 @@ a {
     Layout
 ============ */
 
-header,
-main {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
 /* === Header Layout === */
 header {
   min-height: 208px;
@@ -60,10 +54,61 @@ header {
   align-items: center;
 }
 
+/* === Search Bar Layout === */
+.search-bar {
+  position: absolute;
+  top: -21.485px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* === Explore Section Layout === */
+.explore {
+  position: relative;
+}
+
 /* ================
     Components
 ================ */
 
+/* === Search Bar === */
+.search-bar input[type="text"] {
+  background: #2e2e2f url(/images/searchIcon.svg) no-repeat 0.75em center;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: clamp(0.875rem, 2.545vw, 1rem);
+  font-weight: 500;
+  padding: 0.785em 0 0.785em 2.6em;
+  width: 60%;
+}
+
+.search-bar button {
+  border: none;
+  border-radius: 0 6px 6px 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ===================
     Media Queries
 =================== */
+
+@media (min-width: 629px) {
+  .search-bar {
+    top: -24.545px;
+  }
+}
