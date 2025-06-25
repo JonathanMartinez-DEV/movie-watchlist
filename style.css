@@ -149,6 +149,29 @@ header {
     Pages
 =========== */
 
+/* === Watchlist Page === */
+.watchlist {
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.message {
+  color: #787878;
+  font-size: clamp(1rem, 3.273vw, 2rem);
+  font-weight: 700;
+}
+
+.add-movies {
+  font-size: clamp(0.875rem, 2.545vw, 1.25rem);
+  background: url(/images/addIcon.svg) no-repeat left center;
+  background-size: contain;
+  padding-left: 2em;
+}
+
 /* ===================
     Media Queries
 =================== */
