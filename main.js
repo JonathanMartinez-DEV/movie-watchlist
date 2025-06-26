@@ -7,7 +7,7 @@ searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (e.target.matches(".search-bar")) {
-    const userQuery = getSearchQuery();
+    const userQuery = getEncodedSearchQuery();
     searchMovies(userQuery);
   }
 });
