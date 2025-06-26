@@ -1,3 +1,15 @@
+// === DOM Elements ===
+const searchForm = document.querySelector(".search-bar");
+
+// === Event Listeners ===
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (e.target.matches(".search-bar")) {
+    searchMovies("blade runner");
+  }
+});
+
 // === Core Logic ===
 
 // Fetch movies from OMDb API using the search query
