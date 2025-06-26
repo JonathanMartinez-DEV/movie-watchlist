@@ -29,11 +29,13 @@
       <!-- Start Exploring Section -->
       <section class="explore">
         <!-- Search Bar -->
-        <div class="search-bar">
+        <form class="search-bar">
           <label for="search" class="sr-only">Search movies</label>
           <input type="text" id="search" placeholder="Search..." />
-          <button type="button" aria-label="Search movies">Search</button>
-        </div>
+          <button type="submit" aria-label="Search movies" id="search-btn">
+            Search
+          </button>
+        </form>
 
         <!-- Movies -->
         <div class="movies-container">
